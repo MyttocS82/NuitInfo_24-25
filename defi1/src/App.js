@@ -18,6 +18,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <body className="App">
+        <p className="App-intro">Première modification du fichier !</p>
+      </body>
     </div>
   );
 }
