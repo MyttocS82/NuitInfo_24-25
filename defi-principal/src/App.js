@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./web-pages/Header";
 import HeroSection from "./web-pages/HeroSection";
 import Footer from "./web-pages/Footer";
-import Contact from "./web-pages/Contact"; // Assure-toi que ce fichier existe
+import Contact from "./web-pages/Contact";
 import "./output.css";
 
 function App() {
