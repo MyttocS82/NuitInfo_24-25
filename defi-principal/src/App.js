@@ -1,28 +1,21 @@
-// Header.js
-import React from 'react';
-import './css/header.css';
+import React, {useEffect} from "react";
+import Header from "./web-pages/Header"; // Import du Header
+import HeroSection from "./web-pages/HeroSection"; // Import du HeroSection
+import "./output.css"; // Fichier CSS de Tailwind
 
-function Header() {
+function App() {
+    useEffect(() => {
+        document.title = "VitalSea - Accueil";
+    })
     return (
-        <header className="App-header">
-            <nav className="App-nav">
-                <ul className="nav">
-                    <li className="nav-item">
-                        <a href="#">Accueil</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#">Le défi de la nuit !</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#">Race for Water</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <div className="App">
+            {/* Header global */}
+            <Header />
+
+            {/* Section principale */}
+            <HeroSection />
+        </div>
     );
 }
 
-export default Header;
+export default App;
