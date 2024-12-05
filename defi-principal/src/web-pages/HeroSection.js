@@ -16,12 +16,14 @@ function HeroSection() {
             />
 
             {/* Îlot avec description et image */}
-            <div className="shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-7xl mt-[-10%] relative z-10">
+            <div
+                className="shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-7xl mt-[-10vh] relative z-10">
                 {/* Colonne gauche : texte avec flou */}
                 <div className="p-8 flex flex-col justify-center bg-white/60 backdrop-blur-2xl rounded-l-lg">
                     <h2 className="text-2xl font-bold text-blue-700 mb-4">À propos de RaceForWater</h2>
                     <p className="text-gray-600">
-                        Race for Water est une fondation suisse créée en 2010, engagée dans la préservation des océans
+                        <a className="hover:text-blue-700 transition" href="https://www.raceforwater.org/fr/">Race for Water</a> est une fondation suisse créée en
+                        2010, engagée dans la préservation des océans
                         et la lutte contre la pollution plastique. Elle sensibilise aux impacts environnementaux de
                         cette pollution et œuvre à promouvoir des solutions durables. Son navire emblématique,
                         entièrement autonome grâce à l'énergie solaire, éolienne et à l'hydrogène, parcourt le monde
