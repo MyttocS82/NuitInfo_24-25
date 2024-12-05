@@ -15,9 +15,6 @@ function App() {
             <Header />
 
             {/* Section principale */}
-            <Routes>
-
-            </Routes>
             <HeroSection />
 
             {/* Footer */}
