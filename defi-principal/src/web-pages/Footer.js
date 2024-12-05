@@ -9,8 +9,9 @@ function Footer() {
                 <div className="flex flex-col md:flex-row justify-between mb-8">
                     <div>
                         <h3 className="text-2xl font-bold text-blue-500 mb-4">RaceForWater</h3>
-                        <p className="text-gray-400">
-                            Nous nous engageons pour la préservation de l'eau et des océans. Luttons ensemble contre la pollution plastique.
+                        <p className="text-gray-400 max-w-2xl">
+                            Nous nous engageons pour la préservation de l'eau et des océans.
+                            Luttons ensemble contre la pollution plastique.
                         </p>
                     </div>
 

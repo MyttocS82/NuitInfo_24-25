@@ -1,8 +1,8 @@
 import React, {useEffect} from "react";
-import Header from "./web-pages/Header"; // Import du Header
-import HeroSection from "./web-pages/HeroSection"; // Import du HeroSection
+import Header from "./web-pages/Header";
+import HeroSection from "./web-pages/HeroSection";
 import "./output.css";
-import Footer from "./web-pages/Footer"; // Fichier CSS de Tailwind
+import Footer from "./web-pages/Footer";
 
 function App() {
     useEffect(() => {

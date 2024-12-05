@@ -3,12 +3,12 @@ import raceForWater from "../ressources/raceForWater.png"; // Assure-toi que l'i
 
 function HeroSection() {
     return (
-        <section className="bg-blue-50 min-h-screen flex items-center justify-center px-2">
+        <section className="bg-blue-50 min-h-screen flex items-center justify-center px-2 relative">
             {/* Îlot avec description et image */}
             <div
                 className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-10xl mt-[-10%]">
-                {/* Colonne gauche : texte */}
-                <div className="p-8 flex flex-col justify-center">
+                {/* Colonne gauche : texte avec flou */}
+                <div className="p-8 flex flex-col justify-center bg-white/80 backdrop-blur-md rounded-l-lg">
                     <h2 className="text-2xl font-bold text-blue-700 mb-4">À propos de RaceForWater</h2>
                     <p className="text-gray-600">
                         Race for Water est une fondation suisse créée en 2010, engagée dans la préservation des océans
