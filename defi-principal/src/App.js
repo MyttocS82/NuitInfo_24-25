@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+// Header.js
+import React from 'react';
+import './css/header.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function Header() {
+    return (
+        <header className="App-header">
+            <nav className="App-nav">
+                <ul className="nav">
+                    <li className="nav-item">
+                        <a href="#">Accueil</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#">Le défi de la nuit !</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#">Race for Water</a>
+                    </li>
+                    <li className="nav-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    );
 }
 
-export default App;
+export default Header;
