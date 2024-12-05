@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa"; // Icônes sociales
+import {FaFacebook, FaTwitter, FaLinkedin, FaInstagram} from "react-icons/fa";
 
 function Footer() {
     return (
@@ -31,16 +31,16 @@ function Footer() {
                         <h4 className="text-lg font-semibold mb-4">Suivez-nous</h4>
                         <div className="flex space-x-4">
                             <a href="https://facebook.com" className="hover:text-blue-600">
-                                <FaFacebook size={24} />
+                                <FaFacebook size={24}/>
                             </a>
                             <a href="https://twitter.com" className="hover:text-blue-400">
-                                <FaTwitter size={24} />
+                                <FaTwitter size={24}/>
                             </a>
                             <a href="https://linkedin.com" className="hover:text-blue-500">
-                                <FaLinkedin size={24} />
+                                <FaLinkedin size={24}/>
                             </a>
                             <a href="https://instagram.com" className="hover:text-pink-600">
-                                <FaInstagram size={24} />
+                                <FaInstagram size={24}/>
                             </a>
                         </div>
                     </div>

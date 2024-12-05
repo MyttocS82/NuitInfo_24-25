@@ -1,14 +1,24 @@
 import React from "react";
-import raceForWater from "../ressources/raceForWater.png"; // Assure-toi que l'image est sans arrière-plan
+import raceForWater from "../ressources/raceForWater.png";
+import VideoBackground from "../ressources/coral-reef-destroyed-by-fish-net-free-video.mp4";
 
 function HeroSection() {
     return (
         <section className="bg-blue-50 min-h-screen flex items-center justify-center px-2 relative">
+
+            {/* Vidéo en arrière-plan */}
+            <video
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                src={VideoBackground}
+                autoPlay
+                loop
+                muted
+            />
+
             {/* Îlot avec description et image */}
-            <div
-                className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-10xl mt-[-10%]">
+            <div className="shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-7xl mt-[-10%] relative z-10">
                 {/* Colonne gauche : texte avec flou */}
-                <div className="p-8 flex flex-col justify-center bg-white/80 backdrop-blur-md rounded-l-lg">
+                <div className="p-8 flex flex-col justify-center bg-white/60 backdrop-blur-2xl rounded-l-lg">
                     <h2 className="text-2xl font-bold text-blue-700 mb-4">À propos de RaceForWater</h2>
                     <p className="text-gray-600">
                         Race for Water est une fondation suisse créée en 2010, engagée dans la préservation des océans
@@ -27,7 +37,7 @@ function HeroSection() {
                 </div>
 
                 {/* Colonne droite : image */}
-                <div className="flex justify-center items-center p-8 bg-blue-100">
+                <div className="flex justify-center items-center p-8 bg-white/60 backdrop-blur-2xl">
                     <img
                         src={raceForWater}
                         alt="Catamaran RaceForWater"
