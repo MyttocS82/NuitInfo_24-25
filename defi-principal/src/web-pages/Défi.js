@@ -180,26 +180,37 @@ function Défi() {
                 <div className="mb-6">
                     <h3 className="text-xl font-semibold text-blue-600 mb-2">Vidéo 1 : Les courants marins et le corps
                         humain</h3>
-                    <video controls className="w-full rounded-lg shadow-lg">
-                        <source src="https://drive.google.com/uc?export=download&id=1jL_AMc64gENzFfIs-cw6Es-vM7SWuOUt"
-                                type="video/mp4"/>
-                        Votre navigateur ne supporte pas l'élément vidéo.
-                    </video>
+                    <div className="w-full rounded-lg shadow-lg overflow-hidden">
+                        <iframe
+                            src="https://drive.google.com/file/d/1jL_AMc64gENzFfIs-cw6Es-vM7SWuOUt/preview"
+                            width="100%"
+                            height="480"
+                            allow="autoplay"
+                            allowFullScreen
+                            className="rounded-lg"
+                        ></iframe>
+                    </div>
                 </div>
 
                 {/* Vidéo 2 */}
                 <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-blue-600 mb-2">Vidéo 2 : Le rôle des océans dans le
-                        réchauffement climatique</h3>
-                    <video controls className="w-full rounded-lg shadow-lg">
-                        <source src="https://drive.google.com/uc?export=download&id=1EWVFJtBZ_diovcOOUe8mFhciZD43kowF"
-                                type="video/mp4"/>
-                        Votre navigateur ne supporte pas l'élément vidéo.
-                    </video>
+                    <h3 className="text-xl font-semibold text-blue-600 mb-2">Vidéo 1 : Les courants marins et le corps
+                        humain</h3>
+                    <div className="w-full rounded-lg shadow-lg overflow-hidden">
+                        <iframe
+                            src="https://drive.google.com/file/d/1EWVFJtBZ_diovcOOUe8mFhciZD43kowF/preview?usp=sharing"
+                            width="100%"
+                            height="480"
+                            allow="autoplay"
+                            allowFullScreen
+                            className="rounded-lg"
+                        ></iframe>
+                    </div>
                 </div>
             </div>
 
-            {/* Quiz Section */}
+            {/* Quiz Section */
+            }
             <div
                 className="p-8 bg-white/60 backdrop-blur-xl shadow-lg rounded-lg overflow-hidden flex flex-col w-[90%] max-w-5xl mt-[5dvh] relative z-10 mb-[5dvh]">
                 <h2 className="text-3xl font-bold text-blue-700 mb-4">Quiz : Parallèles entre le Corps Humain et
@@ -239,7 +250,8 @@ function Défi() {
                 )}
             </div>
         </section>
-    );
+    )
+        ;
 }
 
 export default Défi;
