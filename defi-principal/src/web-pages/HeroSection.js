@@ -54,7 +54,8 @@ function HeroSection() {
             </div>
 
             {/* Îlot avec description et image */}
-            <div className="p-8 bg-white/60 backdrop-blur-xl shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-5xl mb-[5dvh] mt-[5dvh] relative z-10">
+            <div
+                className="p-8 bg-white/60 backdrop-blur-xl shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-5xl mb-[5dvh] mt-[5dvh] relative z-10">
                 {/* Colonne gauche : texte avec flou */}
                 <div className="flex flex-col justify-center rounded-l-lg max-w-xl">
                     <h2 className="text-2xl font-bold text-blue-700 mb-4">À propos de RaceForWater</h2>
