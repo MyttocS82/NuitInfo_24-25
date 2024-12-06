@@ -1,6 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 function Contact() {
+    useEffect(() => {
+        document.title = "VitalSea - Contact";
+    });
+
     return (
         <div className="container mx-auto py-16 px-4">
             <h1 className="text-3xl font-bold text-blue-700 mb-6">Contactez-nous</h1>
@@ -39,8 +43,7 @@ function Contact() {
                     Envoyer
                 </button>
             </form>
-        </div>
-    );
+        </div>);
 }
 
 export default Contact;
