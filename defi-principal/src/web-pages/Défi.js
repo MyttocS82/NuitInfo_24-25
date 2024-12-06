@@ -157,6 +157,7 @@ function Défi() {
 
     return (
         <section className="bg-blue-50 min-h-screen flex flex-col items-center justify-start px-2 relative">
+            {/* Vidéo en arrière-plan */}
             <video
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 src={VideoBackground}
@@ -164,31 +165,65 @@ function Défi() {
                 loop
                 muted
             />
+
             <div
                 className="p-8 bg-white/60 backdrop-blur-xl shadow-lg rounded-lg overflow-hidden flex flex-col w-[90%] max-w-5xl mt-[5dvh] relative z-10">
+                <h2 className="text-3xl font-bold text-blue-700 mb-4">
+                    Ressources vidéo pour le Quiz
+                </h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                    Regardez les vidéos ci-dessous pour vous aider à répondre aux questions du quiz sur les
+                    parallèles entre le corps humain, et les océans.
+                </p>
+
+                {/* Vidéo 1 */}
+                <div className="mb-6">
+                    <h3 className="text-xl font-semibold text-blue-600 mb-2">Vidéo 1 : Les courants marins et le corps
+                        humain</h3>
+                    <video controls className="w-full rounded-lg shadow-lg">
+                        <source src="https://drive.google.com/uc?export=download&id=1jL_AMc64gENzFfIs-cw6Es-vM7SWuOUt"
+                                type="video/mp4"/>
+                        Votre navigateur ne supporte pas l'élément vidéo.
+                    </video>
+                </div>
+
+                {/* Vidéo 2 */}
+                <div className="mb-6">
+                    <h3 className="text-xl font-semibold text-blue-600 mb-2">Vidéo 2 : Le rôle des océans dans le
+                        réchauffement climatique</h3>
+                    <video controls className="w-full rounded-lg shadow-lg">
+                        <source src="https://drive.google.com/uc?export=download&id=1EWVFJtBZ_diovcOOUe8mFhciZD43kowF"
+                                type="video/mp4"/>
+                        Votre navigateur ne supporte pas l'élément vidéo.
+                    </video>
+                </div>
+            </div>
+
+            {/* Quiz Section */}
+            <div
+                className="p-8 bg-white/60 backdrop-blur-xl shadow-lg rounded-lg overflow-hidden flex flex-col w-[90%] max-w-5xl mt-[5dvh] relative z-10 mb-[5dvh]">
                 <h2 className="text-3xl font-bold text-blue-700 mb-4">Quiz : Parallèles entre le Corps Humain et
                     l'Océan</h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
                     Répondez aux questions pour tester vos connaissances sur les parallèles entre les systèmes humains
                     et océaniques !
                 </p>
-                <div className="mb-4">
-                    <p className="text-gray-800 font-semibold">{quizQuestions[currentQuestion].question}</p>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4">
-                        {quizQuestions[currentQuestion].options.map((option, index) => (
-                            <button
-                                key={index}
-                                onClick={() => handleAnswer(option)}
-                                className="flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition"
-                            >
-                                <span className="mr-2">{quizQuestions[currentQuestion].icons[index]}</span>
-                                {option}
-                            </button>
-                        ))}
-                    </div>
+
+                {/* Question actuelle */}
+                <p className="text-gray-800 font-semibold">{quizQuestions[currentQuestion].question}</p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-4">
+                    {quizQuestions[currentQuestion].options.map((option, index) => (
+                        <button
+                            key={index}
+                            onClick={() => handleAnswer(option)}
+                            className="flex items-center justify-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                            <span className="mr-2">{quizQuestions[currentQuestion].icons[index]}</span>
+                            {option}
+                        </button>
+                    ))}
                 </div>
 
-                {/* Affichage du message de feedback */}
+                {/* Feedback */}
                 {feedback && (
                     <div className="mt-4 text-xl font-semibold text-center">
                         {feedback === "Réponse correcte !" ? (
