@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Header() {
     return (
@@ -18,13 +18,8 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <a href="#defi" className="hover:text-blue-300 transition">
+                        <a href="/defi" className="hover:text-blue-300 transition">
                             Le Défi
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#race" className="hover:text-blue-300 transition">
-                            RaceForWater
                         </a>
                     </li>
                     <li>
