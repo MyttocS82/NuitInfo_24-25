@@ -1,9 +1,10 @@
 import React, {useEffect} from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from "./web-pages/Header";
-import HeroSection from "./web-pages/HeroSection";
 import Footer from "./web-pages/Footer";
+import HeroSection from "./web-pages/HeroSection";
 import Contact from "./web-pages/Contact";
+import Defi from "./web-pages/Défi";
 import "./output.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
                 {/* Contenu basé sur la route */}
                 <Routes>
                     <Route path="/" element={<HeroSection/>}/>
+                    <Route path="/defi" element={<Defi/>}/>
                     <Route path="/contact" element={<Contact/>}/>
                 </Routes>
 

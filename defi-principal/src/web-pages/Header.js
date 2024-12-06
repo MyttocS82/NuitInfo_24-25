@@ -18,7 +18,7 @@ function Header() {
                         </Link>
                     </li>
                     <li>
-                        <a href="#defi" className="hover:text-blue-300 transition">
+                        <a href="/defi" className="hover:text-blue-300 transition">
                             Le Défi
                         </a>
                     </li>

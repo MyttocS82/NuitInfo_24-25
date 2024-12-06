@@ -4,7 +4,7 @@ import VideoBackground from "../ressources/coral-reef-destroyed-by-fish-net-free
 
 function HeroSection() {
     return (
-        <section className="bg-blue-50 min-h-screen flex items-center justify-center px-2 relative">
+        <section className="bg-blue-50 min-h-screen flex items-start justify-center px-2 relative">
 
             {/* Vidéo en arrière-plan */}
             <video
@@ -16,8 +16,7 @@ function HeroSection() {
             />
 
             {/* Îlot avec description et image */}
-            <div
-                className=" p-8 bg-white/60 backdrop-blur-xl shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-7xl mt-[-5dvh] relative z-10">
+            <div className=" p-8 bg-white/60 backdrop-blur-xl shadow-lg rounded-lg overflow-hidden flex flex-col md:flex-row w-[90%] max-w-7xl mt-[5dvh] relative z-10">
                 {/* Colonne gauche : texte avec flou */}
                 <div className="flex flex-col justify-center rounded-l-lg">
                     <h2 className="text-2xl font-bold text-blue-700 mb-4">À propos de RaceForWater</h2>
