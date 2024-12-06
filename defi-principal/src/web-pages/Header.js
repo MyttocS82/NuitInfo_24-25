@@ -23,11 +23,6 @@ function Header() {
                         </a>
                     </li>
                     <li>
-                        <a href="#race" className="hover:text-blue-300 transition">
-                            RaceForWater
-                        </a>
-                    </li>
-                    <li>
                         <Link to="/contact" className="hover:text-blue-300 transition">
                             Contact
                         </Link>

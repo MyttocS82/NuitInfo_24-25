@@ -21,7 +21,6 @@ function Footer() {
                         <ul>
                             <li><a href="#" className="hover:text-blue-400">Accueil</a></li>
                             <li><a href="#defi" className="hover:text-blue-400">Le Défi</a></li>
-                            <li><a href="#race" className="hover:text-blue-400">RaceForWater</a></li>
                             <li><a href="/contact" className="hover:text-blue-400">Contact</a></li>
                         </ul>
                     </div>
