@@ -194,8 +194,8 @@ function Défi() {
 
                 {/* Vidéo 2 */}
                 <div className="mb-6">
-                    <h3 className="text-xl font-semibold text-blue-600 mb-2">Vidéo 1 : Les courants marins et le corps
-                        humain</h3>
+                    <h3 className="text-xl font-semibold text-blue-600 mb-2">Vidéo 2 : Le rôle des océans dans le
+                        réchauffement climatique</h3>
                     <div className="w-full rounded-lg shadow-lg overflow-hidden">
                         <iframe
                             src="https://drive.google.com/file/d/1EWVFJtBZ_diovcOOUe8mFhciZD43kowF/preview?usp=sharing"
