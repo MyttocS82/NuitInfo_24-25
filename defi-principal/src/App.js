@@ -1,28 +1,35 @@
-// Header.js
-import React from 'react';
-import './css/header.css';
+import React, {useEffect} from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Header from "./web-pages/Header";
+import Footer from "./web-pages/Footer";
+import HeroSection from "./web-pages/HeroSection";
+import Contact from "./web-pages/Contact";
+import Defi from "./web-pages/Défi";
+import "./output.css";
 
-function Header() {
+function App() {
+    useEffect(() => {
+        document.title = "VitalSea - Accueil";
+    });
+
     return (
-        <header className="App-header">
-            <nav className="App-nav">
-                <ul className="nav">
-                    <li className="nav-item">
-                        <a href="#">Accueil</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#">Le défi de la nuit !</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#">Race for Water</a>
-                    </li>
-                    <li className="nav-item">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <Router>
+            <div className="App overscroll-none">
+                {/* Header global */}
+                <Header/>
+
+                {/* Contenu basé sur la route */}
+                <Routes>
+                    <Route path="/" element={<HeroSection/>}/>
+                    <Route path="/defi" element={<Defi/>}/>
+                    <Route path="/contact" element={<Contact/>}/>
+                </Routes>
+
+                {/* Footer */}
+                <Footer/>
+            </div>
+        </Router>
     );
 }
 
-export default Header;
+export default App;
