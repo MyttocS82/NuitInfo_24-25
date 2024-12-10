@@ -5,6 +5,9 @@
 
 Le thème de cette année est : **"Et si l'océan était un corps humain ?"**
 
+### **Accédez au site déployé**  
+Pour une démonstration en ligne de **VitalSea**, visitez le site déployé : [**VitalSea - Nuit de l'Info 2024-2025**](https://nuit-info-24-25-ogtp.vercel.app/)
+
 ---
 
 ## 🛠️ **Fonctionnalités principales**
